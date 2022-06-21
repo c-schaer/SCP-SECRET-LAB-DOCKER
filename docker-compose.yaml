@@ -3,7 +3,8 @@ version: '3'
 services:
   scpsl:
     container_name: scpsl
-    image: t3l3tubie/scpsl:latest
+#     image: t3l3tubie/scpsl:latest
+    build: ./
     restart: unless-stopped
     ports:
       - "7777-7784:7777-7784/udp"
